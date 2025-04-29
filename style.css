@@ -16,21 +16,21 @@ body {
   }
   
   header h1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
   
-  /* Imagen con borde redondeado */
-  .profile-img {
-    display: block;
-    margin: 1rem auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  /* Imagen debajo del nombre */
+  .profile-image {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
+    border-radius: 50%;
     border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 1rem;
+    display: block;
   }
   
-  /* Barra de navegación */
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -51,40 +51,66 @@ body {
     color: #00ccff;
   }
   
+  main {
+    padding: 2rem;
+  }
+  
   /* Secciones */
   section {
     margin-bottom: 3rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: box-shadow 0.3s ease-in-out; /* Transición suave al pasar el ratón */
   }
   
-  /* Efecto cuando se pasa el ratón */
-  section:hover {
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
-  }
-  
-  /* Estilos adicionales para el apartado "Sobre mí" */
+  /* Apartado "Sobre mí" con profundidad */
   #about {
-    background-color: #f9f9f9; /* Fondo suave */
-    border-left: 5px solid #007acc; /* Barra de color en el borde izquierdo */
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
   
-  /* Estilos adicionales para el apartado "Experiencia" */
-  #experience {
-    background-color: #f1f1f1; /* Fondo ligeramente gris */
-    border-left: 5px solid #00ccff; /* Barra de color en el borde izquierdo */
-  }
-  
-  /* Lista de experiencia */
+  /* Experiencia como tarjetas */
   #experience-list {
-    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  .experience-card strong {
+    font-size: 1.2rem;
+    color: #007acc;
+  }
+  
+  .experience-years {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .experience-card ul {
     padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .experience-card li {
+    list-style-type: '✔️ ';
+    margin-left: 0.5rem;
   }
   
   /* Proyectos */
@@ -93,13 +119,13 @@ body {
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   #project-list div:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
   
   #project-list strong {
@@ -127,8 +153,7 @@ body {
     margin: auto;
   }
   
-  input,
-  textarea {
+  input, textarea {
     padding: 0.5rem;
     font-size: 1rem;
     width: 100%;
