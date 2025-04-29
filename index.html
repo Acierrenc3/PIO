@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header class="fade-in">
+    <h1>Ayoze Pestano</h1>
+    <img src="/images/yo.jpg" alt="Imagen de Ayoze Pestano" class="profile-img" />
+    <nav>
+      <a href="#about">Sobre mí</a>
+      <a href="#experience">Experiencia</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="fade-in">
+      <h2>Sobre mí</h2>
+      <p>Soy un Administrativo y desarrollador web apasionado por crear experiencias atractivas y funcionales.
+        Adentrándome cada vez más en el mundo de la programación, mi objetivo es ofrecer soluciones rápidas y cómodas tanto a mis compañeros/as como 
+        a los usuarios/as.
+      </p>
+    </section>
+
+    <section id="experience" class="fade-in">
+      <h2>Experiencia</h2>
+      <ul id="experience-list"></ul>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Proyectos</h2>
+      <div id="project-list"></div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <input type="text" name="user_name" placeholder="Tu nombre" required />
+        <input type="email" name="user_email" placeholder="Tu email" required />
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

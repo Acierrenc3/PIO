@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Imagen con borde redondeado */
+  .profile-img {
+    display: block;
+    margin: 1rem auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+  }
+  
+  /* Barra de navegación */
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #00ccff;
+  }
+  
+  /* Secciones */
+  section {
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave al pasar el ratón */
+  }
+  
+  /* Efecto cuando se pasa el ratón */
+  section:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+  }
+  
+  /* Estilos adicionales para el apartado "Sobre mí" */
+  #about {
+    background-color: #f9f9f9; /* Fondo suave */
+    border-left: 5px solid #007acc; /* Barra de color en el borde izquierdo */
+  }
+  
+  /* Estilos adicionales para el apartado "Experiencia" */
+  #experience {
+    background-color: #f1f1f1; /* Fondo ligeramente gris */
+    border-left: 5px solid #00ccff; /* Barra de color en el borde izquierdo */
+  }
+  
+  /* Lista de experiencia */
+  #experience-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  
+  /* Proyectos */
+  #project-list div {
+    background: #f9f9f9;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #project-list div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  #project-list strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  #project-list a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #project-list a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  input,
+  textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005c99;
+  }
+  
+  /* Animaciones al hacer scroll */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  
+    section {
+      padding: 0 1rem;
+    }
+  }
+  
