@@ -9,7 +9,7 @@ const experiences = [
       role: 'Administrativo PIO',
       company: 'FEMETE',
       years: '2019 - 2021 / 2022 - 2024',
-      description: 'Registro y análisis de datos de usuarios, colaboración con orientadores/as, gestión de documentación, atención al público, apoyo en la organización de eventos, seguimiento de expedientes, elaboración excels del proyecto, gestión web orientafemete.org.',
+      description: 'Elaboración excels del proyecto, gestión web orientafemete.org, registro y análisis de datos de usuarios, colaboración con orientadores/as, gestión de documentación, atención al público, apoyo en la organización de eventos, seguimiento de expedientes',
       skills: ['Microsoft Excel', 'Atención al cliente', 'Proactividad', 'Organización', 'Trabajo en equipo', 'Gestión del estrés', ]
     },
     {
@@ -30,7 +30,7 @@ const experiences = [
     },
     {
       title: 'Excel funcional Gestión Usuarios (Orientadores/as)',
-      description: 'Excel aplicado a la gestión de usuarios y datos sensibles.',
+      description: 'Excel aplicado a la gestión de usuarios y datos sensibles, siendo este cómodo en su funcionamiento, lo que ayuda a obtener cálculos y resultados matemáticos de las acciones realizadas con los usuarios/as.',
       link: 'https://docs.google.com/spreadsheets/d/15qodf82_qb79fP0E1ZxNMIGf0FkOJR9I/edit?usp=sharing&ouid=114246957101443550716&rtpof=true&sd=true'
     }
   ];
