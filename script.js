@@ -1,12 +1,24 @@
 // Inicializar EmailJS
 (function () {
-    emailjs.init("YOUR_USER_ID"); // Reemplaza con tu User ID de EmailJS
+    emailjs.init("service_wgj1jhn"); // Reemplaza con tu User ID de EmailJS
   })();
   
-  // Datos de experiencia
-  const experiences = [
-    { role: 'Administrativo PIO', company: 'FEMETE', years: '2019 - 2021 / 2022 - 2024' },
-    { role: 'Administrativo OPEA', company: 'Fundación Laboral de la Construcción', years: '2021 - 2022' }
+ // Datos de experiencia
+const experiences = [
+    {
+      role: 'Administrativo PIO',
+      company: 'FEMETE',
+      years: '2019 - 2021 / 2022 - 2024',
+      description: 'Registro y análisis de datos de usuarios, colaboración con orientadores/as, gestión de documentación, atención al público, apoyo en la organización de eventos, seguimiento de expedientes, elaboración excels del proyecto, gestión web orientafemete.org.',
+      skills: ['Microsoft Excel', 'Atención al cliente', 'Proactividad', 'Organización', 'Trabajo en equipo', 'Gestión del estrés', ]
+    },
+    {
+      role: 'Administrativo OPEA',
+      company: 'Fundación Laboral de la Construcción',
+      years: '2021 - 2022',
+      description: 'Apoyo en la orientación laboral, registro y análisis de datos de usuarios, colaboración con orientadores/as.',
+      skills: ['Bases de datos', 'Confidencialidad', 'Colaboración', 'Microsoft Office', 'Gestión de usuarios', 'Elaboración excels del proyecto']
+    }
   ];
   
   // Datos de proyectos
@@ -26,15 +38,24 @@
   // Renderizar experiencia
   const experienceList = document.getElementById('experience-list');
   experiences.forEach(exp => {
-    const li = document.createElement('li');
-    li.textContent = `${exp.role} en ${exp.company} (${exp.years})`;
-    experienceList.appendChild(li);
+    const div = document.createElement('div');
+    div.classList.add('experience-card', 'fade-in');
+    div.innerHTML = `
+      <strong>${exp.role}</strong> en <em>${exp.company}</em> <br/>
+      <span class="experience-years">${exp.years}</span>
+      <p>${exp.description}</p>
+      <ul>
+        ${exp.skills.map(skill => `<li>✔️ ${skill}</li>`).join('')}
+      </ul>
+    `;
+    experienceList.appendChild(div);
   });
   
   // Renderizar proyectos
   const projectList = document.getElementById('project-list');
   projects.forEach(proj => {
     const div = document.createElement('div');
+    div.classList.add('fade-in');
     div.innerHTML = `
       <strong>${proj.title}</strong>
       <p>${proj.description}</p>
@@ -43,19 +64,19 @@
     projectList.appendChild(div);
   });
   
-  // Manejo del formulario
+  // Manejo del formulario con EmailJS
   document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault();
   
-    const form = e.target;
-  
-    // Usar EmailJS para enviar el correo
-    emailjs.sendForm("service_wgj1jhn", "YOUR_TEMPLATE_ID", form)
-      .then(function (response) {
+    // Si usas EmailJS
+    emailjs.sendForm('service_wgj1jhn', 'template_default', this)
+      .then(() => {
         alert('Gracias por tu mensaje. Te responderé pronto.');
-        form.reset(); // Opcional: limpiar el formulario
-      }, function (error) {
-        alert('Hubo un error, por favor intenta nuevamente.');
+        this.reset();
+      })
+      .catch((error) => {
+        console.error('Error al enviar:', error);
+        alert('Ocurrió un error al enviar el mensaje. Intenta nuevamente.');
       });
   });
   
@@ -66,7 +87,7 @@
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        appearOnScroll.unobserve(entry.target); // Opcional: solo una vez
+        appearOnScroll.unobserve(entry.target); // Solo una vez
       }
     });
   }, {
@@ -74,4 +95,3 @@
   });
   
   fadeInElements.forEach(el => appearOnScroll.observe(el));
-  
