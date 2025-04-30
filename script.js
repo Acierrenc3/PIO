@@ -24,15 +24,21 @@ const experiences = [
   // Datos de proyectos
   const projects = [
     {
-      title: 'Excel funcional Agenda de proyectos (Administrativos/as)',
-      description: 'Excel que hace de agenda laboral para orientadores/as y administrativos/as.',
-      link: 'https://docs.google.com/spreadsheets/d/1wFHuyfkwS_S96NkZBfhqpcF-ANfpySD8gsxHt6LItfc/edit?usp=sharing'
+      title: 'Base de datos para la gestión de Usuarios',
+      description: 'Pequeña base de datos funcional para que los orientadores guarden y gestionen datos de los usuarios, dicha BBDD es complementaria con ambos excels y con las aplicaciones del Servicio Canario de Empleo',
+      link: 'https://bbdd-users-pio.netlify.app/'
     },
     {
       title: 'Excel funcional Gestión Usuarios (Orientadores/as)',
       description: 'Excel aplicado a la gestión de usuarios y datos sensibles, siendo este cómodo en su funcionamiento, lo que ayuda a obtener cálculos y resultados matemáticos de las acciones realizadas con los usuarios/as.',
       link: 'https://docs.google.com/spreadsheets/d/15qodf82_qb79fP0E1ZxNMIGf0FkOJR9I/edit?usp=sharing&ouid=114246957101443550716&rtpof=true&sd=true'
+    },
+    {
+      title: 'Excel funcional Agenda de proyectos (Administrativos/as)',
+      description: 'Excel que hace de agenda laboral para orientadores/as y administrativos/as.',
+      link: 'https://docs.google.com/spreadsheets/d/1wFHuyfkwS_S96NkZBfhqpcF-ANfpySD8gsxHt6LItfc/edit?usp=sharing'
     }
+    
   ];
   
   // Renderizar experiencia
