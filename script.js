@@ -9,15 +9,15 @@ const experiences = [
       role: 'Administrativo PIO',
       company: 'FEMETE',
       years: '2019 - 2021 / 2022 - 2024',
-      description: 'Elaboración excels del proyecto, gestión web orientafemete.org, registro y análisis de datos de usuarios, colaboración con orientadores/as, gestión de documentación, atención al público, apoyo en la organización de eventos, seguimiento de expedientes',
-      skills: ['Microsoft Excel', 'Atención al cliente', 'Proactividad', 'Organización', 'Trabajo en equipo', 'Gestión del estrés', ]
+      description: 'Me dediqué sobretodo a la elaboración de los Excels, formularios y documentación necesarios para la continuidad del proyecto junto con varios compañeros. También me dediqué a la gestión de la web orientafemete.org, De resto realicé labores administrativas tales como las que menciono en la lista de habilidades',
+      skills: ['Elaboración excels del proyecto','Gestión web orientafemete.org', 'Atención al cliente', 'Proactividad', 'Organización', 'Trabajo en equipo', 'Gestión del estrés','Atención y gestión de llamadas']
     },
     {
       role: 'Administrativo OPEA',
       company: 'Fundación Laboral de la Construcción',
       years: '2021 - 2022',
-      description: 'Apoyo en la orientación laboral, registro y análisis de datos de usuarios, colaboración con orientadores/as.',
-      skills: ['Bases de datos', 'Confidencialidad', 'Colaboración', 'Microsoft Office', 'Gestión de usuarios', 'Elaboración excels del proyecto']
+      description: 'Desarrollé diversas tareas administrativas, además de gestionar y mantener actualizados los archivos Excel y formularios del proyecto. También me encargué de asegurar el correcto funcionamiento de los equipos informáticos, garantizando que tanto yo como mis compañeros/as pudiéramos trabajar de manera eficiente y sin interrupciones.',
+      skills: ['Registro y análisis de datos de usuarios', 'Confidencialidad', 'Colaboración', 'Microsoft Office', 'Gestión de usuarios', 'Elaboración excels del proyecto']
     }
   ];
   
